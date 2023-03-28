@@ -21,7 +21,14 @@ Vertex.java - Vertex class.
 
 ## What to Do 
 
-Fill in the remaining code for AdjListGraph.java, and Edge.java. Your code should be efficient and must have the minimal big-Oh possible for the given implementation.
+Fill in the remaining code for ExtendedGraph.java, and Path.java. Your code should be efficient and must have the minimal big-Oh possible for the given implementation.
+
+public List<Edge> incidentEdges(Vertex v): returns the list of edges originating at v.
+
+public static List<PathVertex> dijkstra(ExtendedGraph g, Vertex v): The implementation of the main algorithm. Extra credit, use a priority data structure to improve performance.
+
+public static List<PathVertex> initializeSingleSource(ExtendedGraph g, Vertex s): The starting step for Dijkstra Algorithm.
+* This sets every PathVertex's parent to null and its distance to the source infinity except for the source (s) where its distance is 0 and gets the vertices (which is of type Vertex) from g and create a List of type PathVertex.
 
 ## Part II. Graph Algorithms
 
