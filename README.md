@@ -8,7 +8,7 @@ This image is the example used for the test cases.
 
 ## Part I. Graph Representations
 
-In this part of the assignment you will implement a graph representation to be used later in Part II.
+In this part of the assignment, you will implement a graph representation to be used later in Part II.
 
 The assignment has several files provided:
 
@@ -30,7 +30,7 @@ TODO #2: Implement the initializeSingleSource function in Path.java
 
 TODO #3: Implement the dijkstra function in Path.java
 
-This assignment will test your grasp on Dijkstra's algorithm.  
+This assignment will test your grasp of Dijkstra's algorithm.  
 The steps are found within each function and it is your job to code it out.  
 
 # Hints  
@@ -57,7 +57,7 @@ Dijkstra(G,w,s):
     u = extract minimum(Q)	
     for each vertex v adjacent to u:	
       RELAX(u,v,w)
-    update values of each vertex in priority queue
+    update values of each vertex in the priority queue
 ```
 
 ## What to Do 
@@ -69,11 +69,11 @@ public List<Edge> incidentEdges(Vertex v): returns the list of edges originating
 public static List<PathVertex> dijkstra(ExtendedGraph g, Vertex v): The implementation of the main algorithm. Extra credit, use a priority data structure to improve performance.
 
 public static List<PathVertex> initializeSingleSource(ExtendedGraph g, Vertex s): The starting step for Dijkstra Algorithm.
-* This sets every PathVertex's parent to null and its distance to the source infinity except for the source (s) where its distance is 0 and gets the vertices (which is of type Vertex) from g and create a List of type PathVertex.
+* This sets every PathVertex's parent to null and its distance to the source infinity except for the source (s) where its distance is 0 and gets the vertices (which is of type Vertex) from g and creates a List of type PathVertex.
 
 ## Part II. Graph Algorithms
 
-In this part of the assignment, you will use the graph representation you created in Part I to read a description of a graph and answer questions about it. In particular, you should use Dijkstra's algorithm to find shortest paths in the graph.
+In this part of the assignment, you will use the graph representation you created in Part I to read a description of a graph and answer questions about it. In particular, you should use Dijkstra's algorithm to find the shortest paths in the graph.
 
 ## What to Do
 Write a program that reads a description of an undirected graph with weighted edges, then answers questions about paths in that graph. More specifically, the program should operate as follows:
@@ -87,7 +87,7 @@ The files are specified as follows:
 ## Additional Files and Information
 Two sample data files are available representing information about airports and the distances between them. 
 * File vertex.txt contains a list of 3-letter airport codes, each of which represents a vertex in the graph. 
-* File edge.txt contains information about edges in the graph. Each edge is described by two lines that each contain an airport code, and a third line giving the distance between them. 
+* File edge.txt contains information about edges in the graph. Each edge is described by two lines that each contain an airport code, and a third line gives the distance between them. 
 
 You may assume that every node name that appears in a path (edge) also appears in the vertex list.
 
@@ -109,7 +109,7 @@ Improve your implementation of Dijkstra's by using a priority queue. For this, y
 
 The simplest implementation of this can just do a sequential scan to locate an item, then adjust the priority, and move the item to its proper place in the heap. A more complex implementation would allow items in the priority queue to be accessed in constant time. 
 
-A simple sequential search of the queue is fine for small graphs, but for large graphs we would like to be able to find items in constant time so the total time needed to update a priority is a constant plus the log n time needed to reestablish the heap property in the queue. 
+A simple sequential search of the queue is fine for small graphs, but for large graphs, we would like to be able to find items in constant time so the total time needed to update a priority is a constant plus the log n time needed to reestablish the heap property in the queue. 
 
 There are various ways to do this, including keeping a back-pointer from each vertex to its entry in the queue.
 
@@ -129,5 +129,5 @@ The results can be found in the command line or in **target/surefire-reports/Ass
 
 Alternatively,
 
-You can use the main method found in Path.java. In fact, the test cases are dervied from that main method.
+You can use the main method found in Path.java. The test cases are derived from that main method.
 
