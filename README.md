@@ -16,7 +16,7 @@ Graph.java - Graph interface.
 
 AbstractGraph.java - Abstract (incomplete) implementation of the Graph interface.
 
-AdjListGraph.java - Graph implementation using an adjacency list. Fill in the remaining code.
+AdjListGraph.java - Graph implementation using an adjacency list. 
 
 Edge.java - Edge class. Fill in the opposite method.
 
